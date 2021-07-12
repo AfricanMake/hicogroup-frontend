@@ -4,7 +4,7 @@ class HelloWorldService{
 
     executeHelloWorldService(name){
         console.log('executed service call')
-        return axios.get(`http://localhost:9090/demo/hello-world/${name}`)
+        return axios.get(`http://localhost:9080/demo/hello-world/${name}`)
     }
 
 }

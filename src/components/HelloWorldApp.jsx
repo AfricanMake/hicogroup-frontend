@@ -7,16 +7,17 @@ import FooterComponent from "./FooterComponent.jsx";
 import WelcomeComponent from "./WelcomeComponent.jsx";
 
 
-class TodoApp extends Component {
+class HelloWorldApp extends Component {
   render() {
     return (
-      <div className="TodoApp">
+      <div className="HelloWorldApp">
         <Router>
           <>
             <HeaderComponent />
             <Switch>
               <Route path="/" exact component={LoginComponent} />
               <Route path="/login" component={LoginComponent} />
+              <Route path="/helloworld-app" component={LoginComponent} />
               <Route
                 path="/welcome/:name"
                 component={WelcomeComponent}
@@ -34,4 +35,4 @@ class TodoApp extends Component {
   }
 }
 
-export default TodoApp;
+export default HelloWorldApp;
